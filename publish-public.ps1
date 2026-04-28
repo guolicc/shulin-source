@@ -8,7 +8,7 @@ $SourceRoot = Split-Path -Parent $PSCommandPath
 $WorkspaceRoot = Split-Path -Parent $SourceRoot
 $PublicRoot = Join-Path $WorkspaceRoot "shulin-public"
 $DistRoot = Join-Path $SourceRoot "dist"
-$PublicRepo = "https://github.com/guolicc/shulin.git"
+$PublicRepo = "https://github.com/guolicc/shulin-page.git"
 
 Set-Location $SourceRoot
 npm run build
