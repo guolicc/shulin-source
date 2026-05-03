@@ -3670,21 +3670,35 @@ const OutroPage = ({ onRestart }) => {
         }
         
         .outro-text-history {
-          font-size: clamp(1rem, 1.6vw, 1.25rem);
+          font-size: clamp(0.95rem, 1.35vw, 1.1rem);
           font-weight: 300;
-          letter-spacing: 0.45em;
-          color: rgba(255,255,255,0.42);
-          margin-bottom: 3rem;
+          letter-spacing: 0.38em;
+          color: rgba(255,255,255,0.38);
+          margin-bottom: 3.4rem;
           position: relative;
         }
         
         .outro-text-action {
-          font-size: clamp(3.2rem, 8vw, 7rem);
+          font-size: clamp(3.6rem, 8.6vw, 7.6rem);
           font-weight: 700;
-          letter-spacing: 0.18em;
-          line-height: 1.15;
+          letter-spacing: 0;
+          line-height: 1;
           margin-bottom: 0;
           text-shadow: 0 0 34px rgba(255,255,255,0.16);
+        }
+
+        .outro-title-wrap {
+          transform: translateY(-4vh);
+        }
+
+        .outro-title-ai {
+          font-family: 'Cinzel', serif;
+          letter-spacing: 0.04em;
+          margin-right: 0.28em;
+        }
+
+        .outro-title-cn {
+          letter-spacing: 0.08em;
         }
         
         .outro-text-philosophy {
@@ -3814,8 +3828,8 @@ const OutroPage = ({ onRestart }) => {
           />
 
           {/* 谢幕文案 */}
-          <div 
-            className="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none"
+          <div
+            className="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none outro-title-wrap"
             style={{ zIndex: 50 }}
           >
             {/* 1. 历史 */}
@@ -3825,7 +3839,8 @@ const OutroPage = ({ onRestart }) => {
 
             {/* 2. 现实 */}
             <h1 className="outro-text-line outro-text-action" style={{ fontFamily: "'Noto Serif SC', serif" }}>
-              AI 时代到来
+              <span className="outro-title-ai">AI</span>
+              <span className="outro-title-cn">时代到来</span>
             </h1>
 
             {/* 重新开始按钮 */}
