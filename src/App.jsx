@@ -282,17 +282,17 @@ const LandingPage = ({ onEnter }) => {
           <div className="absolute inset-0 z-[50] flex flex-col justify-center items-center text-center pointer-events-none" style={{ transform: 'translateZ(50px)' }}>
             {/* 叙事1 */}
             <div className={`landing-narrative-text ${narrative1Active ? 'active' : ''}`}>
-              一切的焦虑、财富、阶级<br/>
+              当 AI 成为新的画笔<br/>
               <span style={{ fontWeight: 300, fontSize: '0.7em', opacity: 0.7, marginTop: '15px', display: 'block' }}>
-                都跟这几次的技术革命有关系
+                审美开始变成一种判断力
               </span>
             </div>
 
             {/* 叙事2 */}
             <div className={`landing-narrative-text ${narrative2Active ? 'active' : ''}`}>
-              系统地告诉你们<br/>
+              不是追赶时代<br/>
               <span style={{ fontWeight: 300, fontSize: '0.7em', opacity: 0.7, marginTop: '15px', display: 'block' }}>
-                00 后为什么失去了机会
+                是重新校准我们看世界的方式
               </span>
             </div>
 
@@ -306,7 +306,7 @@ const LandingPage = ({ onEnter }) => {
                 textShadow: '0 0 20px rgba(255,255,255,0.3)',
                 fontFamily: "'Noto Serif SC', serif"
               }}>
-                大门正在关闭
+                审美正在重启
               </h1>
               <p style={{
                 fontSize: 'clamp(1rem, 1.5vw, 1.3rem)',
@@ -316,7 +316,7 @@ const LandingPage = ({ onEnter }) => {
                 textTransform: 'uppercase',
                 fontFamily: "'Noto Serif SC', serif"
               }}>
-                时代只给你们留了一条缝
+                从提示词，到判断力
               </p>
 
               {/* 入口按钮 */}
@@ -330,7 +330,7 @@ const LandingPage = ({ onEnter }) => {
                     letterSpacing: '0.5em'
                   }}
                 >
-                  往哪里飞 →
+                  进入展场 →
                 </button>
               </div>
             </div>
@@ -3670,43 +3670,46 @@ const OutroPage = ({ onRestart }) => {
         }
         
         .outro-text-history {
-          font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+          font-size: clamp(0.85rem, 1.2vw, 1rem);
           font-weight: 300;
-          letter-spacing: 0.3em;
-          color: rgba(255,255,255,0.4);
-          margin-bottom: 2rem;
+          letter-spacing: 0.45em;
+          color: rgba(255,255,255,0.32);
+          margin-bottom: 3rem;
           position: relative;
         }
         
         .outro-text-action {
-          font-size: clamp(2rem, 5vw, 4rem);
+          font-size: clamp(2.8rem, 7vw, 6.2rem);
           font-weight: 700;
-          letter-spacing: 0.1em;
-          margin-bottom: 1.5rem;
-          text-shadow: 0 0 30px rgba(255, 51, 51, 0.2);
+          letter-spacing: 0.16em;
+          line-height: 1.15;
+          margin-bottom: 4rem;
+          text-shadow: 0 0 34px rgba(255,255,255,0.16);
         }
         
         .outro-text-philosophy {
-          font-size: clamp(1.2rem, 2vw, 1.5rem);
+          font-size: clamp(1rem, 1.5vw, 1.25rem);
           font-weight: 400;
           letter-spacing: 0.5em;
           color: #fff;
-          padding: 10px 20px;
-          border-top: 1px solid rgba(255,51,51,0.5);
-          border-bottom: 1px solid rgba(255,51,51,0.5);
-          margin-bottom: 4rem;
+          padding: 12px 28px;
+          border-top: 1px solid rgba(255,255,255,0.16);
+          border-bottom: 1px solid rgba(255,255,255,0.16);
+          margin-bottom: 0;
         }
         
         .outro-text-soul {
-          font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+          font-size: clamp(0.75rem, 1vw, 0.9rem);
           font-weight: 300;
-          letter-spacing: 0.15em;
-          color: #eee;
+          letter-spacing: 0.2em;
+          color: rgba(255,255,255,0.38);
           font-style: italic;
           font-family: 'Noto Serif SC', serif;
           max-width: 600px;
           line-height: 1.8;
           opacity: 0;
+          position: absolute;
+          bottom: 12%;
         }
         
         .outro-restart-btn {
@@ -3829,12 +3832,12 @@ const OutroPage = ({ onRestart }) => {
           >
             {/* 1. 历史 */}
             <p className="outro-text-line outro-text-history">
-              知识阶级落幕了
+              AI 时代到来
             </p>
 
             {/* 2. 现实 */}
             <h1 className="outro-text-line outro-text-action" style={{ fontFamily: "'Noto Serif SC', serif" }}>
-              用好 AI<br/>迎接新的时代
+              重新校准<br/>审美
             </h1>
 
             {/* 3. 哲学 */}
@@ -3844,10 +3847,7 @@ const OutroPage = ({ onRestart }) => {
 
             {/* 4. 归途 */}
             <p className="outro-text-line outro-text-soul">
-              所有复利到最后，只剩一句话：<br/>
-              <span style={{ fontSize: '1.4em', color: '#fff', opacity: 1, marginTop: '15px', fontStyle: 'normal' }}>
-                这个世界，开心最大。
-              </span>
+              好的判断，会留下好的风景。
             </p>
 
             {/* 重新开始按钮 */}
