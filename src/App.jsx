@@ -282,17 +282,17 @@ const LandingPage = ({ onEnter }) => {
           <div className="absolute inset-0 z-[50] flex flex-col justify-center items-center text-center pointer-events-none" style={{ transform: 'translateZ(50px)' }}>
             {/* 叙事1 */}
             <div className={`landing-narrative-text ${narrative1Active ? 'active' : ''}`}>
-              当 AI 成为新的画笔<br/>
+              一切的焦虑、财富、阶级<br/>
               <span style={{ fontWeight: 300, fontSize: '0.7em', opacity: 0.7, marginTop: '15px', display: 'block' }}>
-                审美开始变成一种判断力
+                都跟这几次的技术革命有关系
               </span>
             </div>
 
             {/* 叙事2 */}
             <div className={`landing-narrative-text ${narrative2Active ? 'active' : ''}`}>
-              不是追赶时代<br/>
+              每一次技术革命<br/>
               <span style={{ fontWeight: 300, fontSize: '0.7em', opacity: 0.7, marginTop: '15px', display: 'block' }}>
-                是重新校准我们看世界的方式
+                都在重写牌桌
               </span>
             </div>
 
@@ -306,7 +306,7 @@ const LandingPage = ({ onEnter }) => {
                 textShadow: '0 0 20px rgba(255,255,255,0.3)',
                 fontFamily: "'Noto Serif SC', serif"
               }}>
-                审美正在重启
+                大门正在关闭
               </h1>
               <p style={{
                 fontSize: 'clamp(1rem, 1.5vw, 1.3rem)',
@@ -316,7 +316,7 @@ const LandingPage = ({ onEnter }) => {
                 textTransform: 'uppercase',
                 fontFamily: "'Noto Serif SC', serif"
               }}>
-                从提示词，到判断力
+                时代只给你们留了一条缝
               </p>
 
               {/* 入口按钮 */}
@@ -330,7 +330,7 @@ const LandingPage = ({ onEnter }) => {
                     letterSpacing: '0.5em'
                   }}
                 >
-                  进入展场 →
+                  往哪里飞 →
                 </button>
               </div>
             </div>
@@ -3670,20 +3670,20 @@ const OutroPage = ({ onRestart }) => {
         }
         
         .outro-text-history {
-          font-size: clamp(0.85rem, 1.2vw, 1rem);
+          font-size: clamp(1rem, 1.6vw, 1.25rem);
           font-weight: 300;
           letter-spacing: 0.45em;
-          color: rgba(255,255,255,0.32);
+          color: rgba(255,255,255,0.42);
           margin-bottom: 3rem;
           position: relative;
         }
         
         .outro-text-action {
-          font-size: clamp(2.8rem, 7vw, 6.2rem);
+          font-size: clamp(3.2rem, 8vw, 7rem);
           font-weight: 700;
-          letter-spacing: 0.16em;
+          letter-spacing: 0.18em;
           line-height: 1.15;
-          margin-bottom: 4rem;
+          margin-bottom: 0;
           text-shadow: 0 0 34px rgba(255,255,255,0.16);
         }
         
@@ -3741,18 +3741,6 @@ const OutroPage = ({ onRestart }) => {
           opacity: 1;
           transform: translateY(0);
           transition-delay: 3.5s;
-        }
-        
-        .outro-ending .outro-text-philosophy {
-          opacity: 1;
-          transform: translateY(0);
-          transition-delay: 4.5s;
-        }
-        
-        .outro-ending .outro-text-soul {
-          opacity: 1;
-          transform: translateY(0);
-          transition-delay: 6s;
         }
         
         .outro-ending .outro-restart-btn {
@@ -3832,23 +3820,13 @@ const OutroPage = ({ onRestart }) => {
           >
             {/* 1. 历史 */}
             <p className="outro-text-line outro-text-history">
-              AI 时代到来
+              知识阶级落幕了
             </p>
 
             {/* 2. 现实 */}
             <h1 className="outro-text-line outro-text-action" style={{ fontFamily: "'Noto Serif SC', serif" }}>
-              重新校准<br/>审美
+              AI 时代到来
             </h1>
-
-            {/* 3. 哲学 */}
-            <div className="outro-text-line outro-text-philosophy" style={{ fontFamily: "'Noto Serif SC', serif" }}>
-              止于至善
-            </div>
-
-            {/* 4. 归途 */}
-            <p className="outro-text-line outro-text-soul">
-              好的判断，会留下好的风景。
-            </p>
 
             {/* 重新开始按钮 */}
             <button 
