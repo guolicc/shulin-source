@@ -3711,7 +3711,7 @@ const OutroPage = ({ onRestart }) => {
         }
 
         .outro-title-row-kicker {
-          font-size: 0.82em;
+          font-size: 1em;
           font-weight: 700;
         }
         
@@ -3806,7 +3806,7 @@ const OutroPage = ({ onRestart }) => {
           }
 
           .outro-title-row-kicker {
-            font-size: 0.76em;
+            font-size: 1em;
           }
 
           .outro-text-philosophy {
