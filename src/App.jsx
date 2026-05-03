@@ -3709,11 +3709,6 @@ const OutroPage = ({ onRestart }) => {
           display: block;
           white-space: nowrap;
         }
-
-        .outro-title-row-kicker {
-          font-size: 1em;
-          font-weight: 700;
-        }
         
         .outro-text-philosophy {
           font-size: clamp(0.95rem, 1.35vw, 1.12rem);
@@ -3805,10 +3800,6 @@ const OutroPage = ({ onRestart }) => {
             letter-spacing: 0.015em;
           }
 
-          .outro-title-row-kicker {
-            font-size: 1em;
-          }
-
           .outro-text-philosophy {
             font-size: 0.76rem;
             letter-spacing: 0.42em;
@@ -3893,11 +3884,12 @@ const OutroPage = ({ onRestart }) => {
 
             {/* 2. 现实 */}
             <h1 className="outro-text-line outro-text-action" style={{ fontFamily: "'Noto Serif SC', serif" }}>
-              <span className="outro-title-row outro-title-row-kicker">
-                <span className="outro-title-cn">用好</span>
-                <span className="outro-title-ai">AI</span>
+              <span className="outro-title-row">
+                用好 AI
               </span>
-              <span className="outro-title-row outro-title-cn">迎接新的时代</span>
+              <span className="outro-title-row">
+                迎接新时代
+              </span>
             </h1>
 
             {/* 3. 余韵 */}
