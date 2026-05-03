@@ -3682,12 +3682,12 @@ const OutroPage = ({ onRestart }) => {
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 0.2rem;
+          gap: 1.35rem;
           font-size: clamp(4.2rem, 8vw, 7.4rem);
           font-weight: 700;
           letter-spacing: 0;
           line-height: 1.04;
-          margin-bottom: 4.5rem;
+          margin-bottom: 4.8rem;
           text-shadow: 0 0 34px rgba(255,255,255,0.16);
         }
 
@@ -3711,8 +3711,8 @@ const OutroPage = ({ onRestart }) => {
         }
 
         .outro-title-row-kicker {
-          font-size: 0.66em;
-          font-weight: 600;
+          font-size: 0.82em;
+          font-weight: 700;
         }
         
         .outro-text-philosophy {
@@ -3789,8 +3789,8 @@ const OutroPage = ({ onRestart }) => {
 
           .outro-text-action {
             font-size: clamp(3rem, 15vw, 4.15rem);
-            gap: 0.15rem;
-            margin-bottom: 3.75rem;
+            gap: 0.7rem;
+            margin-bottom: 3.9rem;
           }
 
           .outro-title-wrap {
@@ -3806,7 +3806,7 @@ const OutroPage = ({ onRestart }) => {
           }
 
           .outro-title-row-kicker {
-            font-size: 0.6em;
+            font-size: 0.76em;
           }
 
           .outro-text-philosophy {
