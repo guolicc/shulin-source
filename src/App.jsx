@@ -3679,13 +3679,16 @@ const OutroPage = ({ onRestart }) => {
         }
         
         .outro-text-action {
-          font-size: clamp(2.5rem, 5.8vw, 5.3rem);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.2rem;
+          font-size: clamp(4.2rem, 8vw, 7.4rem);
           font-weight: 700;
           letter-spacing: 0;
-          line-height: 1.05;
-          margin-bottom: 4.7rem;
+          line-height: 1.04;
+          margin-bottom: 4.5rem;
           text-shadow: 0 0 34px rgba(255,255,255,0.16);
-          white-space: nowrap;
         }
 
         .outro-title-wrap {
@@ -3700,6 +3703,16 @@ const OutroPage = ({ onRestart }) => {
 
         .outro-title-cn {
           letter-spacing: 0.05em;
+        }
+
+        .outro-title-row {
+          display: block;
+          white-space: nowrap;
+        }
+
+        .outro-title-row-kicker {
+          font-size: 0.66em;
+          font-weight: 600;
         }
         
         .outro-text-philosophy {
@@ -3775,8 +3788,9 @@ const OutroPage = ({ onRestart }) => {
           }
 
           .outro-text-action {
-            font-size: clamp(2rem, 8.8vw, 2.55rem);
-            margin-bottom: 3.8rem;
+            font-size: clamp(3rem, 15vw, 4.15rem);
+            gap: 0.15rem;
+            margin-bottom: 3.75rem;
           }
 
           .outro-title-wrap {
@@ -3784,11 +3798,15 @@ const OutroPage = ({ onRestart }) => {
           }
 
           .outro-title-ai {
-            margin: 0 0.13em;
+            margin: 0 0.12em;
           }
 
           .outro-title-cn {
-            letter-spacing: 0.02em;
+            letter-spacing: 0.015em;
+          }
+
+          .outro-title-row-kicker {
+            font-size: 0.6em;
           }
 
           .outro-text-philosophy {
@@ -3875,9 +3893,11 @@ const OutroPage = ({ onRestart }) => {
 
             {/* 2. 现实 */}
             <h1 className="outro-text-line outro-text-action" style={{ fontFamily: "'Noto Serif SC', serif" }}>
-              <span className="outro-title-cn">用好</span>
-              <span className="outro-title-ai">AI</span>
-              <span className="outro-title-cn">迎接新的时代</span>
+              <span className="outro-title-row outro-title-row-kicker">
+                <span className="outro-title-cn">用好</span>
+                <span className="outro-title-ai">AI</span>
+              </span>
+              <span className="outro-title-row outro-title-cn">迎接新的时代</span>
             </h1>
 
             {/* 3. 余韵 */}
