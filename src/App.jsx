@@ -224,10 +224,10 @@ const LandingPage = ({ onEnter }) => {
         {/* 品牌与装饰 */}
         <div className="absolute top-10 left-10 z-[100]" style={{ mixBlendMode: 'difference' }}>
           <div className="text-2xl font-bold tracking-[0.1em] text-white" style={{ fontFamily: "'Noto Serif SC', serif", textShadow: '0 0 20px rgba(0,0,0,0.5)' }}>
-            SHULIN | 树林
+            树成林 | AI
           </div>
           <div className="text-xs tracking-[0.3em] text-white/60 mt-1" style={{ fontFamily: "'Cinzel', serif" }}>
-            WEEKLY REVIEW
+            AI AESTHETICS
           </div>
         </div>
 

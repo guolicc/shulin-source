@@ -11,7 +11,7 @@ $DistRoot = Join-Path $SourceRoot "dist"
 $PublicRepo = "https://github.com/guolicc/shulin-page.git"
 
 Set-Location $SourceRoot
-npm run build
+npm run build -- --base=/shulin-page/
 
 if (-not (Test-Path -LiteralPath $PublicRoot)) {
     git clone $PublicRepo $PublicRoot

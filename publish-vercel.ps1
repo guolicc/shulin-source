@@ -14,9 +14,17 @@ Set-Location $DistRoot
 $Output = npx --yes vercel@latest deploy . --prod --yes --public
 $Output | Write-Host
 
-$DeploymentUrl = ($Output | Select-String -Pattern "Production:\s+(https://\S+)" | Select-Object -Last 1).Matches.Groups[1].Value
+$ProductionMatch = $Output | Select-String -Pattern "Production:\s+(https://\S+)" | Select-Object -Last 1
+$DeploymentUrl = $null
+if ($ProductionMatch -and $ProductionMatch.Matches.Count -gt 0) {
+    $DeploymentUrl = $ProductionMatch.Matches[0].Groups[1].Value
+}
+
 if (-not $DeploymentUrl) {
-    $DeploymentUrl = ($Output | Select-String -Pattern '"url":\s+"(https://[^"]+)"' | Select-Object -First 1).Matches.Groups[1].Value
+    $JsonMatch = $Output | Select-String -Pattern '"url":\s+"(https://[^"]+)"' | Select-Object -First 1
+    if ($JsonMatch -and $JsonMatch.Matches.Count -gt 0) {
+        $DeploymentUrl = $JsonMatch.Matches[0].Groups[1].Value
+    }
 }
 
 if (-not $DeploymentUrl) {
