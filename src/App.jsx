@@ -3670,45 +3670,45 @@ const OutroPage = ({ onRestart }) => {
         }
         
         .outro-text-history {
-          font-size: clamp(0.95rem, 1.35vw, 1.1rem);
+          font-size: clamp(0.9rem, 1.25vw, 1.05rem);
           font-weight: 300;
-          letter-spacing: 0.38em;
-          color: rgba(255,255,255,0.38);
-          margin-bottom: 3.4rem;
+          letter-spacing: 0.44em;
+          color: rgba(255,255,255,0.34);
+          margin-bottom: 3.1rem;
           position: relative;
         }
         
         .outro-text-action {
-          font-size: clamp(3.6rem, 8.6vw, 7.6rem);
+          font-size: clamp(2.5rem, 5.8vw, 5.3rem);
           font-weight: 700;
           letter-spacing: 0;
-          line-height: 1;
-          margin-bottom: 0;
+          line-height: 1.05;
+          margin-bottom: 4.7rem;
           text-shadow: 0 0 34px rgba(255,255,255,0.16);
+          white-space: nowrap;
         }
 
         .outro-title-wrap {
-          transform: translateY(-4vh);
+          transform: translateY(5vh);
         }
 
         .outro-title-ai {
           font-family: 'Cinzel', serif;
-          letter-spacing: 0.04em;
-          margin-right: 0.28em;
+          letter-spacing: 0.02em;
+          margin: 0 0.16em;
         }
 
         .outro-title-cn {
-          letter-spacing: 0.08em;
+          letter-spacing: 0.05em;
         }
         
         .outro-text-philosophy {
-          font-size: clamp(1rem, 1.5vw, 1.25rem);
+          font-size: clamp(0.95rem, 1.35vw, 1.12rem);
           font-weight: 400;
-          letter-spacing: 0.5em;
-          color: #fff;
-          padding: 12px 28px;
-          border-top: 1px solid rgba(255,255,255,0.16);
-          border-bottom: 1px solid rgba(255,255,255,0.16);
+          letter-spacing: 0.62em;
+          color: rgba(255,255,255,0.68);
+          padding: 0;
+          border: none;
           margin-bottom: 0;
         }
         
@@ -3756,9 +3756,45 @@ const OutroPage = ({ onRestart }) => {
           transform: translateY(0);
           transition-delay: 3.5s;
         }
+
+        .outro-ending .outro-text-philosophy {
+          opacity: 1;
+          transform: translateY(0);
+          transition-delay: 4.5s;
+        }
         
         .outro-ending .outro-restart-btn {
           opacity: 1;
+        }
+
+        @media (max-width: 640px) {
+          .outro-text-history {
+            font-size: 0.72rem;
+            letter-spacing: 0.26em;
+            margin-bottom: 2.35rem;
+          }
+
+          .outro-text-action {
+            font-size: clamp(2rem, 8.8vw, 2.55rem);
+            margin-bottom: 3.8rem;
+          }
+
+          .outro-title-wrap {
+            transform: translateY(4vh);
+          }
+
+          .outro-title-ai {
+            margin: 0 0.13em;
+          }
+
+          .outro-title-cn {
+            letter-spacing: 0.02em;
+          }
+
+          .outro-text-philosophy {
+            font-size: 0.76rem;
+            letter-spacing: 0.42em;
+          }
         }
       `}</style>
       
@@ -3839,9 +3875,15 @@ const OutroPage = ({ onRestart }) => {
 
             {/* 2. 现实 */}
             <h1 className="outro-text-line outro-text-action" style={{ fontFamily: "'Noto Serif SC', serif" }}>
+              <span className="outro-title-cn">用好</span>
               <span className="outro-title-ai">AI</span>
-              <span className="outro-title-cn">时代到来</span>
+              <span className="outro-title-cn">迎接新的时代</span>
             </h1>
+
+            {/* 3. 余韵 */}
+            <p className="outro-text-line outro-text-philosophy" style={{ fontFamily: "'Noto Serif SC', serif" }}>
+              止于至善
+            </p>
 
             {/* 重新开始按钮 */}
             <button 
