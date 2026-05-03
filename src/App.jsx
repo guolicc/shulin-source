@@ -3682,8 +3682,8 @@ const OutroPage = ({ onRestart }) => {
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 1.35rem;
-          font-size: clamp(4.2rem, 8vw, 7.4rem);
+          gap: 1.2rem;
+          font-size: clamp(3.6rem, 6.6vw, 6.25rem);
           font-weight: 700;
           letter-spacing: 0;
           line-height: 1.04;
@@ -3783,8 +3783,8 @@ const OutroPage = ({ onRestart }) => {
           }
 
           .outro-text-action {
-            font-size: clamp(3rem, 15vw, 4.15rem);
-            gap: 0.7rem;
+            font-size: clamp(2.55rem, 12.2vw, 3.25rem);
+            gap: 0.62rem;
             margin-bottom: 3.9rem;
           }
 
@@ -3888,7 +3888,7 @@ const OutroPage = ({ onRestart }) => {
                 用好 AI
               </span>
               <span className="outro-title-row">
-                迎接新时代
+                迎接新的时代
               </span>
             </h1>
 
